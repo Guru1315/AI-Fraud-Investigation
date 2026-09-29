@@ -17,13 +17,13 @@ How it Works?
 
 The AI Fraud Investigation Agent uses 7 specialized tools, all powered by public data sources:
 
-*Provider Search — Queries the Illinois DCFS licensing portal for all active providers in a ZIP code, returning capacity, license type, and license status
-*Property Analysis — Pulls building square footage, lot size, property class, and year built from the Cook County Assessor's open data (Socrata API, no auth required)
-*Capacity Calculation — Applies Illinois DCFS Part 407 building code math: (building_sqft × 0.65) ÷ 35 = max legal children. A 900 sq ft building cannot legally serve 50 children — this is a mathematical impossibility, not an opinion
-*Street View — Captures four-directional Google Street View images to check whether the address looks like a real childcare facility or something else entirely
-*Places Info — Queries Google Places for the current business listed at the address, its operating status, rating, and recent reviews
-*Business Registration — Probes the Illinois Secretary of State to verify the provider is a registered legal entity
-*Geocoding — Converts addresses to coordinates for spatial analysis
+*Provider Search — Queries the Illinois DCFS licensing portal for all active providers in a ZIP code, returning capacity, license type, and license status.
+*Property Analysis — Pulls building square footage, lot size, property class, and year built from the Cook County Assessor's open data (Socrata API, no auth required).
+*Capacity Calculation — Applies Illinois DCFS Part 407 building code math: (building_sqft × 0.65) ÷ 35 = max legal children. A 900 sq ft building cannot legally serve 50 children — this is a mathematical impossibility, not an opinion.
+*Street View — Captures four-directional Google Street View images to check whether the address looks like a real childcare facility or something else entirely.
+*Places Info — Queries Google Places for the current business listed at the address, its operating status, rating, and recent reviews.
+*Business Registration — Probes the Illinois Secretary of State to verify the provider is a registered legal entity.
+*Geocoding — Converts addresses to coordinates for spatial analysis.
 
 The agent investigates each provider in the ZIP code, narrating its reasoning as it works. When it notices something suspicious — a building too small for its license, a closed storefront claiming to run childcare, a name appearing across multiple providers — it follows that thread and explains why it matters.
 
