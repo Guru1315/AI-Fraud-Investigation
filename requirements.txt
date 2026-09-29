@@ -1,2 +1,2 @@
-bolt
+bolt host
 google-genai
