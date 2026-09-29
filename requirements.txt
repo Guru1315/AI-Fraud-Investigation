@@ -1,2 +1,2 @@
-streamlit
+bolt
 google-genai
